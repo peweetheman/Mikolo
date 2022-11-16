@@ -1,11 +1,13 @@
 from object import Object
-from ghost import Ghost
-
-init_ghost_speed = 2
 
 class Board():
 
     def __init__(self):
-        self.objects = [[]]
-        for i in range(5):
-            Ghost( ,init_ghost_speed)
+        # create 2D grid of positions which can be occupied by walls
+        self.grid = []
+        for i in range(20):
+            row = []
+            for j in range(30):
+                row.append(False)  # false indicates no wall
+            self.grid.append(row)
+
