@@ -5,7 +5,7 @@ class Ghost(Character):
 
     # This method gives a recipe to initialize a new instance of the class
     def __init__(self, x, y):
-        super().__init__(x, y, x_vel=0.1, y_vel=0.1, speed=0)
+        super().__init__(x, y, x_vel=8.0, y_vel=8.0, speed=0)
         if random.random() > 0.5:  # with 50% chance
             self.x_vel = -self.x_vel
         self.y_vel = 0
